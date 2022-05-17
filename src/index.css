@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700');
+
+:root {
+  --orange: #f7861c;
+  --purple: #C86DD7;
+  --dark-purple: #8F68E4;
+  --blue: #0087AA;
+  --light-blue: #1CCAF7;
+  --green: #03C482;
+}
+
+.metamask-button {
+  display: inline-block;
+  position: relative;
+}
+
+.metamask-button * {
+  font-family: 'Source Sans Pro', sans-serif;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+}

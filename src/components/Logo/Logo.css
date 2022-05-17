@@ -1,0 +1,7 @@
+.fox {
+  width: 42px;
+  height: 42px;
+  /* background-image: url(../../assets/images/metamask-logo.png); */
+  background-image: url(https://i.imgur.com/o7tccVn.png);
+  background-size: cover;
+}

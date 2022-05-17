@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Metamask Transaction Button DEMO</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      body > div {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="metamask-button"
+      address="0x2b7dF997E54CD20a9fFa5AC460D0A9FBD5fB0c09"
+      amount="0.005"
+      success-callback="onSuccess"
+      error-callback="onError"
+    ></div>
+
+    <div
+      class="metamask-button"
+      address="0x2b7dF997E54CD20a9fFa5AC460D0A9FBD5fB0c09"
+      amount="0.005"
+      fiat-currency="USD"
+      text="Pay"
+      logo-animated="false"
+    ></div>
+
+    <div
+      class="metamask-button"
+      address="0x1f2b10EbC8783d2851B96CdA086E6e6a021E6b4B"
+      text="Donate"
+      amount="5"
+      amount-currency="EUR"
+      fiat-first="true"
+      success-text="Success!"
+    ></div>
+
+    <div
+      class="metamask-button"
+      address="0x1f2b10EbC8783d2851B96CdA086E6e6a021E6b4B"
+      text="Pay"
+      amount="50"
+      amount-currency="GBP"
+      success-text="Success!"
+      logo-animated="false"
+    ></div>
+
+    <script>
+      // Test callbacks
+      window.onSuccess = (transactionHash) => {
+        console.log('window.onSuccess!', transactionHash)
+      }
+      window.onError = (e) => {
+        console.error('window.onError!', e)
+      }
+    </script>
+    <script src="https://cdn.rawgit.com/pierregoutheraud/metamask-transaction-button/6ebebf41/build/static/js/mtb.js"></script>
+  </body>
+</html>
